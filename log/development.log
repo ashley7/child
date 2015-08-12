@@ -52840,3 +52840,412 @@ Started GET "/assets/user_profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-08-12 19:57:12 +0300
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:24:10 +0300
+Processing by ChildController#students as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mStudentDetaile Load (0.4ms)[0m  [1mSELECT "student_detailes".* FROM "student_detailes"[0m
+  [1m[35mStackholder Load (0.3ms)[0m  SELECT "stackholders".* FROM "stackholders"
+  Rendered child/students.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 176ms (Views: 170.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/child/download_files" for 127.0.0.1 at 2015-08-12 20:24:12 +0300
+Processing by ChildController#download_files as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered child/download_files.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 164ms (Views: 160.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:24:19 +0300
+Processing by ChildController#students as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mStudentDetaile Load (0.4ms)[0m  [1mSELECT "student_detailes".* FROM "student_detailes"[0m
+  [1m[35mStackholder Load (0.3ms)[0m  SELECT "stackholders".* FROM "stackholders"
+  Rendered child/students.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 381ms (Views: 377.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/child/download_files" for 127.0.0.1 at 2015-08-12 20:24:21 +0300
+Processing by ChildController#download_files as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered child/download_files.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 165ms (Views: 162.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:24:53 +0300
+Processing by ChildController#students as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mStudentDetaile Load (0.3ms)[0m  [1mSELECT "student_detailes".* FROM "student_detailes"[0m
+  [1m[35mStackholder Load (0.3ms)[0m  SELECT "stackholders".* FROM "stackholders"
+  Rendered child/students.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 166ms (Views: 161.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/child/download_files" for 127.0.0.1 at 2015-08-12 20:25:00 +0300
+Processing by ChildController#download_files as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered child/download_files.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 163ms (Views: 160.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:25:04 +0300
+Processing by ChildController#students as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mStudentDetaile Load (0.5ms)[0m  [1mSELECT "student_detailes".* FROM "student_detailes"[0m
+  [1m[35mStackholder Load (0.4ms)[0m  SELECT "stackholders".* FROM "stackholders"
+  Rendered child/students.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 399ms (Views: 394.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:25:47 +0300
+Processing by ChildController#students as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mStudentDetaile Load (0.5ms)[0m  SELECT "student_detailes".* FROM "student_detailes"
+  [1m[36mStackholder Load (0.4ms)[0m  [1mSELECT "stackholders".* FROM "stackholders"[0m
+  Rendered child/students.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 188ms (Views: 180.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.self-8c0a18ef497d6248739c038ca99120e435b9d0ac33120bf065cd090558f70e73.css?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/bootstrap.min.self-2c354d7c0179bd35563b93633b23ac5fb07c67d531d40a75695bacbd0eadb799.css?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/child.self-0ccca446fa34ad71fd000dfebfa76d5867652b3281ff59e29f3f730e9f4c1890.css?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/registration.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/scaffolds.self-35f44c4a06e6c9609039f57313320e25deb7436905e92cef86fc4312ffcc25ab.css?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/user_profiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/disqus_rails.self-9bb3b832f8d0ff3c73c20b9bebf8de434f4af85b0eaf4278135928ca2c9ecca5.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/registration.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/jquery-1.9.0.self-03a8409f8b5892a2a0083af9807d4ffee4ac3118828c5ce5ad9edc49bf241316.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/child.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/bootstrap.min.self-0a65aa3a620a64312bae4036782aace3626cbd19bb8850450beaa0a980620783.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/user_profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-08-12 20:25:48 +0300
+
+
+Started GET "/child/download_files" for 127.0.0.1 at 2015-08-12 20:25:50 +0300
+Processing by ChildController#download_files as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered child/download_files.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 178ms (Views: 173.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:25:53 +0300
+Processing by ChildController#students as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mStudentDetaile Load (0.3ms)[0m  SELECT "student_detailes".* FROM "student_detailes"
+  [1m[36mStackholder Load (0.3ms)[0m  [1mSELECT "stackholders".* FROM "stackholders"[0m
+  Rendered child/students.html.erb within layouts/application (218.7ms)
+Completed 200 OK in 403ms (Views: 399.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/child/download_files" for 127.0.0.1 at 2015-08-12 20:25:56 +0300
+Processing by ChildController#download_files as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered child/download_files.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 165ms (Views: 161.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-08-12 20:40:17 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0BnlIZTXw+XDD2CCxL+DDQALJrhl+M4XX9timWTYyL2vFBwhfDSzl3wnYmZyXLDCB02KSVtQwg9NyxRnqjC9tQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 54ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-12 20:40:17 +0300
+Processing by ChildController#index as HTML
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-12 20:40:17 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (361.0ms)
+Completed 200 OK in 742ms (Views: 545.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-08-12 20:40:20 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 190ms (Views: 187.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-12 20:40:22 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 189ms (Views: 186.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 20:40:33 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z70j2UIY/r8nFuqPxnckcdDF2Ea3DoueN14lFYEEER5oIAd01T7Tp7QjVjyoY6y5QgpeFMlAtP5N6AVszv3beQ==", "user"=>{"email"=>"charles@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (6.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "charles@gmail.com"]]
+Completed 401 Unauthorized in 234ms (ActiveRecord: 6.6ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z70j2UIY/r8nFuqPxnckcdDF2Ea3DoueN14lFYEEER5oIAd01T7Tp7QjVjyoY6y5QgpeFMlAtP5N6AVszv3beQ==", "user"=>{"email"=>"charles@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 336ms (Views: 176.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 20:40:41 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pNLASMZczXhfQFJ0pDvtyRF2derXfqYlKBY53aYkqPWrT+TlUXrgYMx17sfKL2UBg7nzuKkwmUVSoBmk6d1ikg==", "user"=>{"email"=>"charles@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "charles@gmail.com"]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pNLASMZczXhfQFJ0pDvtyRF2derXfqYlKBY53aYkqPWrT+TlUXrgYMx17sfKL2UBg7nzuKkwmUVSoBmk6d1ikg==", "user"=>{"email"=>"charles@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 331ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 20:40:51 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BAdNkOrSaDytQ7VXYvsFYqFmDfvqz5oYL3DxEMkP3i8Lmmk9ffRFJD52CeQM742qM6mLqZSBpXhVxtFphvYUSA==", "user"=>{"email"=>"charles@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "charles@gmail.com"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BAdNkOrSaDytQ7VXYvsFYqFmDfvqz5oYL3DxEMkP3i8Lmmk9ffRFJD52CeQM742qM6mLqZSBpXhVxtFphvYUSA==", "user"=>{"email"=>"charles@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 356ms (Views: 182.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-08-12 20:41:01 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 410ms (Views: 407.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-08-12 20:41:02 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 182ms (Views: 178.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-12 20:41:09 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 188ms (Views: 185.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-08-12 20:41:39 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MhLN7Q1+fw5FPfKA0uyk/hLiiXkVqYMkcHms+S8esvc9j+lAmlhSFtYITjO8+Cw2gC0PK2vnvEQKz4yAYOd4kA==", "user"=>{"email"=>"zash@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "zash@gmail.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2015-08-12 17:41:40.160190"], ["sign_in_count", 2], ["updated_at", "2015-08-12 17:41:40.161946"], ["id", 8]]
+  [1m[35m (159.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 378ms (ActiveRecord: 161.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-12 20:41:40 +0300
+Processing by ChildController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mDirector Load (0.3ms)[0m  SELECT "directors".* FROM "directors"
+  [1m[36mStudentDetaile Load (0.4ms)[0m  [1mSELECT "student_detailes".* FROM "student_detailes"[0m
+  Rendered child/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 175ms (Views: 171.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:41:43 +0300
+Processing by ChildController#students as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mStudentDetaile Load (0.3ms)[0m  [1mSELECT "student_detailes".* FROM "student_detailes"[0m
+  [1m[35mStackholder Load (0.3ms)[0m  SELECT "stackholders".* FROM "stackholders"
+  Rendered child/students.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 386ms (Views: 382.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/child/download_files" for 127.0.0.1 at 2015-08-12 20:41:45 +0300
+Processing by ChildController#download_files as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered child/download_files.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 172ms (Views: 167.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/child/download_files" for 127.0.0.1 at 2015-08-12 20:41:45 +0300
+Processing by ChildController#download_files as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered child/download_files.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 166ms (Views: 162.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/director" for 127.0.0.1 at 2015-08-12 20:41:51 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "directors"
+  [1m[36mDirector Load (0.3ms)[0m  [1mSELECT  "directors".* FROM "directors"  ORDER BY directors.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "fileuploads"
+  [1m[36mFileupload Load (0.4ms)[0m  [1mSELECT  "fileuploads".* FROM "fileuploads"  ORDER BY fileuploads.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "stackholders"
+  [1m[36mStackholder Load (0.6ms)[0m  [1mSELECT  "stackholders".* FROM "stackholders"  ORDER BY stackholders.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "student_detailes"
+  [1m[36mStudentDetaile Load (0.4ms)[0m  [1mSELECT  "student_detailes".* FROM "student_detailes"  ORDER BY student_detailes.updated_at desc LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "user_profiles"
+  [1m[36mUserProfile Load (0.4ms)[0m  [1mSELECT  "user_profiles".* FROM "user_profiles"  ORDER BY user_profiles.updated_at desc LIMIT 1[0m
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (45.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_navigation.html.haml (8.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (9.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/pjax.html.haml (2.5ms)
+Completed 200 OK in 1043ms (Views: 1012.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/director" for 127.0.0.1 at 2015-08-12 20:41:52 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "directors"[0m
+  [1m[35mDirector Load (0.4ms)[0m  SELECT  "directors".* FROM "directors"  ORDER BY directors.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "fileuploads"[0m
+  [1m[35mFileupload Load (0.4ms)[0m  SELECT  "fileuploads".* FROM "fileuploads"  ORDER BY fileuploads.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "stackholders"[0m
+  [1m[35mStackholder Load (0.3ms)[0m  SELECT  "stackholders".* FROM "stackholders"  ORDER BY stackholders.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "student_detailes"[0m
+  [1m[35mStudentDetaile Load (0.4ms)[0m  SELECT  "student_detailes".* FROM "student_detailes"  ORDER BY student_detailes.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_profiles"[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  "user_profiles".* FROM "user_profiles"  ORDER BY user_profiles.updated_at desc LIMIT 1
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (256.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_navigation.html.haml (8.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (8.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/pjax.html.haml (2.4ms)
+Completed 200 OK in 1077ms (Views: 1054.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/director" for 127.0.0.1 at 2015-08-12 20:41:54 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "directors"
+  [1m[36mDirector Load (0.3ms)[0m  [1mSELECT  "directors".* FROM "directors"  ORDER BY directors.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "fileuploads"
+  [1m[36mFileupload Load (0.4ms)[0m  [1mSELECT  "fileuploads".* FROM "fileuploads"  ORDER BY fileuploads.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "stackholders"
+  [1m[36mStackholder Load (0.3ms)[0m  [1mSELECT  "stackholders".* FROM "stackholders"  ORDER BY stackholders.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "student_detailes"
+  [1m[36mStudentDetaile Load (0.4ms)[0m  [1mSELECT  "student_detailes".* FROM "student_detailes"  ORDER BY student_detailes.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "user_profiles"
+  [1m[36mUserProfile Load (0.4ms)[0m  [1mSELECT  "user_profiles".* FROM "user_profiles"  ORDER BY user_profiles.updated_at desc LIMIT 1[0m
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (37.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_navigation.html.haml (6.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (8.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/layouts/rails_admin/pjax.html.haml (2.3ms)
+Completed 200 OK in 873ms (Views: 848.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/director/director?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-08-12 20:41:59 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"director"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mDirector Load (0.5ms)[0m  [1mSELECT  "directors".* FROM "directors"  ORDER BY directors.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "directors"
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (530.5ms)
+Completed 200 OK in 855ms (Views: 836.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/director/fileupload?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-08-12 20:42:01 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"fileupload"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mFileupload Load (0.6ms)[0m  SELECT  "fileuploads".* FROM "fileuploads"  ORDER BY fileuploads.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "fileuploads"[0m
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (133.5ms)
+Completed 200 OK in 162ms (Views: 144.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/director/stackholder?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-08-12 20:42:03 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"stackholder"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mStackholder Load (0.4ms)[0m  [1mSELECT  "stackholders".* FROM "stackholders"  ORDER BY stackholders.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "stackholders"
+  Rendered /var/lib/gems/1.9.1/gems/rails_admin-0.6.8/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (63.9ms)
+Completed 200 OK in 277ms (Views: 77.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-12 20:42:07 +0300
+Processing by ChildController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mDirector Load (0.4ms)[0m  SELECT "directors".* FROM "directors"
+  [1m[36mStudentDetaile Load (0.4ms)[0m  [1mSELECT "student_detailes".* FROM "student_detailes"[0m
+  Rendered child/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 242ms (Views: 233.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:42:10 +0300
+Processing by ChildController#students as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mStudentDetaile Load (0.3ms)[0m  [1mSELECT "student_detailes".* FROM "student_detailes"[0m
+  [1m[35mStackholder Load (0.4ms)[0m  SELECT "stackholders".* FROM "stackholders"
+  Rendered child/students.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 363ms (Views: 359.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/child/students" for 127.0.0.1 at 2015-08-12 20:42:10 +0300
+Processing by ChildController#students as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mStudentDetaile Load (0.4ms)[0m  SELECT "student_detailes".* FROM "student_detailes"
+  [1m[36mStackholder Load (0.3ms)[0m  [1mSELECT "stackholders".* FROM "stackholders"[0m
+  Rendered child/students.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 188ms (Views: 182.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/child/download_files" for 127.0.0.1 at 2015-08-12 20:42:13 +0300
+Processing by ChildController#download_files as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered child/download_files.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 168ms (Views: 165.2ms | ActiveRecord: 0.2ms)

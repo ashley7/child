@@ -13,8 +13,8 @@
  	<div class = "nav">
  		<ul class = "nav nav-pills navbar-inverse">
  			<li class = "<%= 'active' if current_page?(root_path)%>"><%= link_to("Stake holders", root_path)%></li>
- 			<li class = "%= 'active' if current_page?( child_download_files_path)%"><%= link_to("School Contacts", child_students_path)%></li>
- 			<li class = "%= 'active' if current_page?( child_download_files_path)%"><%= link_to("Get Files", child_download_files_path)%></li>
+ 			<li class = "<%= 'active' if current_page?( child_students_path)%>"><%= link_to("School Contacts", child_students_path)%></li>
+ 			<li class = "<%= 'active' if current_page?( child_download_files_path)%>"><%= link_to("Communication", child_download_files_path)%></li>
  			<li class = "<%= 'active' if current_page?(rails_admin_path)%>">
  				<%= link_to("Admin",rails_admin_path)%></li>
   <li><% if user_signed_in? %>
