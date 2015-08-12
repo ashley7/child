@@ -18,7 +18,6 @@ gem 'twitter-bootstrap-rails'
 gem 'less-rails' 
 gem 'paperclip'
 gem 'devise'
-gem 'therubyracer'
 gem 'kaminari'
 gem 'rails_admin'
 # up to here
