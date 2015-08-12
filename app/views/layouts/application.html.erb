@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Child</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	 <div class = "container well">
+
+ 	<div class = "nav">
+ 		<ul class = "nav nav-pills navbar-inverse">
+ 			<li class = "<%= 'active' if current_page?(root_path)%>"><%= link_to("Stake holders", root_path)%></li>
+ 			<li class = "%= 'active' if current_page?( child_download_files_path)%"><%= link_to("School Contacts", child_students_path)%></li>
+ 			<li class = "%= 'active' if current_page?( child_download_files_path)%"><%= link_to("Get Files", child_download_files_path)%></li>
+ 			<li class = "<%= 'active' if current_page?(rails_admin_path)%>">
+ 				<%= link_to("Admin",rails_admin_path)%></li>
+  <li><% if user_signed_in? %>
+<%= link_to 'Sign Out', destroy_user_session_path, method:
+:delete %></li>
+<% else %>
+<li><%= link_to 'Login', new_user_session_path%></li>
+<li><%= link_to 'Sign Up', new_user_registration_path%></li>
+ <% end %>
+
+ 			</ul>
+ 	</div>
+ 	 
+ 	   <%if notice %><p class="notice alert alert-success"><%= notice %></p>	 
+ 	   <% end %>
+ 	   
+     <% if alert %>  <p class="alert alert-warning"><%= alert %></p><% end %>
+   
+<!-- initailising disqus -->
+<%= disqus_init %>
+
+<%= yield %>
+
+
+ </div>
+
+</body>
+</html>

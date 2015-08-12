@@ -1,0 +1,191 @@
+<div class = "row">
+	<div class = "col-md-2 alert alert-info">
+		<div class = "nav">
+	<ul class = "nav nav-pills nav-stacked">
+		<li><a href = "#student_display" data-toggle = "collapse">students</a></li>
+		<li><a href = "#student_more" data-toggle = "collapse">Teachers</a></li>
+	<li><a href = "#stackholders" data-toggle = "collapse">Head office profile</a></li>
+
+<li>
+	<!-- <a href="#myModal" class="btn btn-success" data-toggle="modal">Show Modal</a>
+			<div id="myModal" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="" class="close" data-dismiss="modal">
+								&times
+							</a>
+							<h2>Upload Student marks</h2>
+						</div>
+						<div class="modal-body">
+						 
+							 
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-success" data-dismiss="modal">Yes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+</li> -->
+
+
+	</ul>
+		</div>
+	</div>
+	<div class = "col-md-10">		
+		<div class = "collapse" id = "student_display">
+			<div id="accordion" class="panel-group">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#one" data-toggle="collapse" data-parent="#accordion">Student</a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse in" id="one">
+						<div class="panel-body">
+	<table class = "table table-hover table-striiped">
+		<caption><h2 class = "alert alert-warning">STUDENT LIST</h2></caption>
+		<tr class = "danger">
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Student Number</td>
+			<td>Region</td>
+			 
+			<td>Class</td>
+			<td>Parent Name</td>
+			<td>Home Phone</td>
+
+		</tr>
+<% for i_counter in @students do %>
+ <% name = i_counter.first_name
+ lname = i_counter.last_name
+ number = i_counter.student_number
+ region = i_counter.region
+  
+ class_of_student = i_counter.class_of_student
+ parent_Name = i_counter.parent_name
+ home_phone = i_counter.phone_number 
+ %>
+ <tr class = "success">
+ 	<td><%= name%></td>
+ 	<td><%= lname%></td>
+ 	<td><%= number%></td>
+ 	<td><%= region%></td>
+ 	 
+ 	<td><%= parent_Name%></td>
+ 	<td><%= home_phone%></td>
+ </tr>
+<% end %>
+</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "collapse" id = "student_more">
+			<div id="accordion" class="panel-group">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#one" data-toggle="collapse" data-parent="#accordion">Teachers</a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse in" id="one">
+						<div class="panel-body">
+	<table class = "table table-hover table-striiped">
+	<caption><h2 class = "alert alert-warning">TEACHERS  LIST</h2></caption>
+
+		<tr class = "danger">
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Phone Number</td>
+			<td>Email Address</td>
+			 
+			<td>Employee ID</td>
+			<td>Parent Catagory</td>
+			<td>Home Region</td>
+
+		</tr>
+<% for counter in @stokes do %>
+ <% name = counter.first_name
+ lname = counter.last_name
+ number = counter.phone_number
+ region = counter.email_address
+  
+ class_of_student = counter.employee_ID
+ parent_Name = counter.category
+ home_phone = counter.region_of_origin 
+ %>
+ <tr class = "success">
+ 	<td><%= name%></td>
+ 	<td><%= lname%></td>
+ 	<td><%= number%></td>
+ 	<td><%= region%></td> 	 
+ 	<td><%= parent_Name%></td>
+ 	<td><%= home_phone%></td>
+ </tr>
+<% end %>
+</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<div class = "collapse" id = "stackholders">
+			<div id="accordion" class="panel-group">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#one" data-toggle="collapse" data-parent="#accordion">Get Stack holder Basic information</a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse in" id="one">
+						<div class="panel-body">
+							<table class = "table table-hover table-stripped">
+								<tr class = "danger">
+									<td>Name</td>
+									<td>Phone</td>
+									<td>Email</td>
+									<td>Category</td>
+									<td>Home area</td>
+									<td>Date</td>
+								</tr>
+							<% 
+							for count in @stokes do
+								lname = count.first_name
+								fname = count.last_name
+								name = lname+" "+lname
+								phone = count.phone_number
+								mailer = count.email_address
+								cat = count.category
+								home = count.region_of_origin
+								time_back = time_ago_in_words(count. created_at)%>
+								<tr class = "success">
+									<td><%= name%></td>
+									<td><%=phone%></td>
+									<td><%=mailer%></td>
+									<td><%= cat%></td>
+									<td><%= home%></td>
+									<td><%= time_back%></td>
+
+								</tr>
+							 <%end %>
+							</table>
+							
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+  </div>
+</div>
+
+ 

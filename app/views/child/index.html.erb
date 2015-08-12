@@ -1,0 +1,104 @@
+
+<div class = "row">
+	<div class = "col-md-2 col-sm-2 col-xs-2 col-lg-2">
+
+</div>
+
+<div class = "col-md-8 col-sm-8 col-xs-8 col-lg-8">
+	<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#two" data-toggle="collapse" data-parent="#accordion">View stackholders</a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse" id="two">
+						<div class="panel-body">
+
+							<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#director" data-toggle="collapse" data-parent="#accordion">View stackholders</a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse" id="director">
+						<div class="panel-body">
+							<table class = "table table-hover table-stripped">
+								<caption class = "well">
+									Head office</caption>
+								<tr class = "danger"><th>Employee id</th><th>Name</th><th>phone</th><th>Email</th></tr>
+								<% for counter in @admind do%>
+								<% 						
+								name = counter.first_name+""+counter.last_name
+
+								id = counter.employee_id
+								contact = counter.contact
+								email = counter.email_address
+								%>
+
+					<tr class = "success">
+						<td>
+			<a href="#<%= id%>" class="btn btn-success" data-toggle="modal"><%= id%></a>
+			<div id="<%= id%>" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<a href="" class="close" data-dismiss="modal">
+								&times
+							</a>
+							<h2><%= name%></h2>
+
+						</div>
+						<div class="modal-body">
+							<p>Contact: <%= contact%></p>
+							<p>Email: <%= email%></p>
+							 
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-success" data-dismiss="modal">Yes</button>
+						</div>
+					</div>
+				</div>
+			</div>										 
+
+									</td>
+									<td>
+										<%= name%>
+									</td>
+									<td>
+										<%= counter.contact%>
+									</td>
+									<td>
+										<%=email%>
+
+									</td>
+
+								</tr>
+								<% end %>
+							</table>
+
+						</div>
+					</div>
+				</div>
+
+						
+
+
+
+
+						</div>
+					</div>
+				</div>
+
+</div>
+
+<div class = "col-md-2 col-sm-2 col-xs-2 col-lg-2"
+ 
+
+</div>
+
+
+</div>
+ <% for counter in @students do%>
+ 
+ <% end %>
+ 

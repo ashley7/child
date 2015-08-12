@@ -1,0 +1,115 @@
+<%= form_for @user_profile, :html => { :class => "form-horizontal user_profile" } do |f| %>
+
+    <% if @user_profile.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@user_profile.errors.count, "error") %> prohibited this user_profile from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @user_profile.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :first_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :first_name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:first_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :last_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :last_name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:last_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_of_birth, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :date_of_birth, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:date_of_birth]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :email_address, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email_address, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:email_address]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :nationality, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :nationality, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:nationality]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :gender, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :gender, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:gender]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :occupation, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :occupation, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:occupation]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :phone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :phone, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:phone]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :user_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :user_id, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:user_id]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :avatar_file_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :avatar_file_name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:avatar_file_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :avatar_content_type, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :avatar_content_type, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:avatar_content_type]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :avatar_file_size, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :avatar_file_size, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:avatar_file_size]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :avatar_updated_at, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :avatar_updated_at, :class => 'form-control' %>
+    </div>
+    <%= error_span(@user_profile[:avatar_updated_at]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            user_profiles_path, :class => 'btn btn-default' %>
+
+<% end %>
